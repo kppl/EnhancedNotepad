@@ -6,6 +6,6 @@ namespace EnhancedNotepad
 {
     interface IKeyWords
     {
-        void GenerateLabel();
+        List<string> GetKeyWords();
     }
 }
