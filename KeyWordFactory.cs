@@ -8,13 +8,13 @@ namespace EnhancedNotepad
     {
         static List<string> KeyWords; 
 
-        public static List<string> GetKeyWordList(string category)
+        public static List<string> GetKeyWordList(string input, string category)
         {
             switch (category)
             {
                 case "most used":
                     KeyWordsMostUsed result = new KeyWordsMostUsed();
-                    return result.GetKeyWords();
+                    return result.GetKeyWords(input);
                 case "context related":
                     return null;
                 case "positive":

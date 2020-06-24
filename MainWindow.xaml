@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="Enhanced Notepad" Height="600" Width="900" Background="#FF999999">
     <Grid>
-        <TextBox HorizontalAlignment="Center" Margin="0,10,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="880" Height="20"/>
-        <Button Content="Go" HorizontalAlignment="Center" Height="24" Margin="0,75,0,0" VerticalAlignment="Top" Width="880"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,10,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="900" Height="20"/>
+        <Button Content="Go" HorizontalAlignment="Center" Height="24" Margin="0,75,0,0" VerticalAlignment="Top" Width="920"/>
         <RichTextBox Margin="0,104,0,0" TextChanged="RichTextBox_TextChanged" Name="MainTextBox" SpellCheck.IsEnabled="True">
             <FlowDocument>
                 <Paragraph>
