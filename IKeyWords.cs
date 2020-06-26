@@ -6,6 +6,6 @@ namespace EnhancedNotepad
 {
     interface IKeyWords
     {
-        List<string> GetKeyWords(string input);
+        List<string> GetKeyWords(string input, int topResults);
     }
 }

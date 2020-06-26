@@ -23,11 +23,24 @@ namespace EnhancedNotepad
         public MainWindow()
         {
             InitializeComponent();
+            SearchBox.Text = "....";
         }
 
-        private void RichTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void MainTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+             Console.WriteLine(".");
 
+            TextRange textRange = new TextRange(MainTextBox.Document.ContentStart, MainTextBox.Document.ContentEnd);
+
+            List<string> keyWordList = KeyWordFactory.GetKeyWordList(textRange.Text, "most used");
+            foreach (string word in keyWordList)
+                SearchBox.Text = SearchBox.Text + " " + word.Trim();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("GO");
+            
         }
     }
 }

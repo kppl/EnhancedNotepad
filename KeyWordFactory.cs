@@ -12,6 +12,7 @@ namespace EnhancedNotepad
         {
             switch (category)
             {
+                // TODO: enumeration here
                 case "most used":
                     KeyWordsMostUsed result = new KeyWordsMostUsed();
                     return result.GetKeyWords(input);
